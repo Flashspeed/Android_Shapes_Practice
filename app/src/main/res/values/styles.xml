@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--Style definitions-->
+    <style name="ShapesAppTheme_BaseStyle" parent="Theme.AppCompat">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--Style -->
+    <style name="ShapesAppTheme" parent="ShapesAppTheme_BaseStyle" />
+
+</resources>
