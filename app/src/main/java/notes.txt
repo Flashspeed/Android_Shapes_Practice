@@ -1,2 +1,4 @@
 https://developer.android.com/guide/topics/ui/look-and-feel/themes#MaterialTheme (Go to Apply a style as a theme)
 https://developer.android.com/training/implementing-navigation/nav-drawer
+https://stackoverflow.com/questions/47150512/navigation-view-going-under-toolbar-in-android
+https://stackoverflow.com/questions/38924541/what-should-be-the-size-of-drawer-header-image/38925184
