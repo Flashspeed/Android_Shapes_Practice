@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Shapes Practice</string>
+    <string name="txt_bar_chart">Bar Chart</string>
+    <string name="txt_clock">Clock</string>
 </resources>
