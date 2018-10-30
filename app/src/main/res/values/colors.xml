@@ -6,6 +6,9 @@
     <color name="colorPrimaryDark_2">#508c0032</color>
     <color name="colorAccent">#c51162</color>
     <color name="colorMediumGray">#b4b4b4</color>
+    <color name="colorNavDrawer">#313131</color>
+    <color name="colorNavDrawerItemSelected">#232323</color>
+    <color name="textColorSecondary">#ffffff</color>
 
     <color name="colorSecondary">#880e4f</color>
     <color name="colorSecondaryLight">#bc477b</color>

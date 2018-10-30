@@ -1,14 +1,13 @@
 <resources>
 
     <!--Style definitions-->
-    <style name="ShapesAppTheme_BaseStyle" parent="Theme.AppCompat">
+    <style name="ShapesAppTheme_BaseStyle" parent="Theme.AppCompat.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark_2</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
     <!--Style -->
     <style name="ShapesAppTheme" parent="ShapesAppTheme_BaseStyle" />
-
 </resources>
