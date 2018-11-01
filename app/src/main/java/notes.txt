@@ -4,3 +4,5 @@ Link https://stackoverflow.com/questions/47150512/navigation-view-going-under-to
 Link https://stackoverflow.com/questions/38924541/what-should-be-the-size-of-drawer-header-image/38925184
 Link https://stackoverflow.com/a/38408447/4268050 (Change the color of a checked menu item in a navigation drawer)
 Link https://developer.android.com/guide/topics/ui/menus#kotlin
+Link https://stackoverflow.com/questions/28208934/android-draw-a-canvas-within-a-fragment?noredirect=1&lq=1
+Link https://stackoverflow.com/questions/18261677/best-practice-for-updating-arguments-of-a-fragment
