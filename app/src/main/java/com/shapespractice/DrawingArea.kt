@@ -27,7 +27,7 @@ class DrawingArea(context: Context, private val paint: Paint) : View(context) {
     }
 
     @SuppressLint("NewApi")
-    private fun drawBarChartHorizontal(canvas: Canvas?)
+    public fun drawBarChartHorizontal(canvas: Canvas?)
     {
         canvas?.drawPaint(paint)
         canvas?.drawColor(Color.WHITE)
@@ -48,7 +48,7 @@ class DrawingArea(context: Context, private val paint: Paint) : View(context) {
 
     }
 
-    private fun drawClock(canvas: Canvas?)
+    public fun drawClock(canvas: Canvas?)
     {
         canvas?.drawPaint(paint)
         canvas?.drawColor(Color.WHITE)
