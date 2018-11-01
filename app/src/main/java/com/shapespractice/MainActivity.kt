@@ -1,5 +1,6 @@
 package com.shapespractice
 
+import android.app.FragmentContainer
 import android.graphics.Paint
 import android.os.Bundle
 import android.support.design.widget.NavigationView
@@ -11,6 +12,10 @@ import android.support.v7.widget.Toolbar
 import android.util.Log
 import android.view.Gravity
 import android.view.MenuItem
+import android.view.View
+import com.shapespractice.fragments.FragDrawingArea
+import com.shapespractice.fragments.FragSayFood
+import com.shapespractice.fragments.FragSayHello
 
 class MainActivity : AppCompatActivity()
 {
@@ -20,7 +25,18 @@ class MainActivity : AppCompatActivity()
     {
         super.onCreate(savedInstanceState)
         val paint = Paint()
+
         val drawingArea = DrawingArea(this, paint)
+
+        val fragDrawingArea = FragDrawingArea()
+
+        val fragSayFood     = FragSayFood()
+        val fragSayHello    = FragSayHello()
+
+        val fragmentManager = supportFragmentManager
+
+        val fragmentTransaction = fragmentManager.beginTransaction()
+
 //        setContentView(drawingArea)
 //        setContentView(R.layout.drawer_menu_header_layout)
         setContentView(R.layout.activity_main)
@@ -50,10 +66,19 @@ class MainActivity : AppCompatActivity()
                 //TODO add a fragment containing the drawing for the selected menu item
 
                 getString(R.string.txt_bar_chart) ->
+                {
                     Log.i("MenuTap", getString(R.string.txt_bar_chart))
+                    fragmentTransaction.replace(R.id.fragmentContainer, fragSayFood)
+                    fragmentTransaction.commit()
+                }
+
 
                 getString(R.string.txt_clock)     ->
+                {
                     Log.i("MenuTap", getString(R.string.txt_clock))
+                    fragmentTransaction.replace(R.id.fragmentContainer, fragSayHello)
+                    fragmentTransaction.commit()
+                }
 
                 else -> print("Unknown menu item was tapped")
             }
@@ -78,7 +103,6 @@ class MainActivity : AppCompatActivity()
             }
             else -> super.onOptionsItemSelected(item)
         }
-
 
     }
 
