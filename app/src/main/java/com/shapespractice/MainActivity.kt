@@ -33,10 +33,6 @@ class MainActivity : AppCompatActivity()
         val fragSayFood     = FragSayFood()
         val fragSayHello    = FragSayHello()
 
-        val fragmentManager = supportFragmentManager
-
-        val fragmentTransaction = fragmentManager.beginTransaction()
-
 //        setContentView(drawingArea)
 //        setContentView(R.layout.drawer_menu_header_layout)
         setContentView(R.layout.activity_main)
@@ -60,28 +56,28 @@ class MainActivity : AppCompatActivity()
             // Close the drawer after the tap
             drawerLayout.closeDrawers()
 
+            val fragmentManager = supportFragmentManager
+            val fragmentTransaction = fragmentManager.beginTransaction()
+
             // The when expression replaces the switch statement
             when(aMenuItem.title)
             {
                 //TODO add a fragment containing the drawing for the selected menu item
-
                 getString(R.string.txt_bar_chart) ->
                 {
                     Log.i("MenuTap", getString(R.string.txt_bar_chart))
                     fragmentTransaction.replace(R.id.fragmentContainer, fragSayFood)
-                    fragmentTransaction.commit()
                 }
-
 
                 getString(R.string.txt_clock)     ->
                 {
                     Log.i("MenuTap", getString(R.string.txt_clock))
                     fragmentTransaction.replace(R.id.fragmentContainer, fragSayHello)
-                    fragmentTransaction.commit()
                 }
 
                 else -> print("Unknown menu item was tapped")
             }
+            fragmentTransaction.commit()
             true
         }
 
